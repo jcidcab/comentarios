@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffbcc; /* Amarillo brillante */
+}
+
+#comments-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-container {
+  border: solid 1px #ff6f61; /* Naranja brillante */
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #ff4081; /* Rosa fuerte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.responses-container {
+  margin-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responses-container .comment-container {
+  background-color: #7c4dff; /* Morado brillante */
+  color: #ffffff;
+}
+
+.input {
+  padding: 10px 15px;
+  border: solid 1px #29b6f6; /* Azul brillante */
+  border-radius: 15px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50; /* Verde brillante */
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #d500f9; /* Fucsia brillante */
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #comments-container {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  .comment-container {
+      padding: 10px;
+  }
+
+  .responses-container {
+      padding-left: 10px;
+  }
+
+  button {
+      padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+      padding: 8px 10px;
+  }
+
+  button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
